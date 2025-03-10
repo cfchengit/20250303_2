@@ -27,7 +27,7 @@ function setup() {
   dropdown.position(button.x + button.width + 20, 15); // 把下拉式選單放在按鈕的右側
   dropdown.option('淡江大學');
   dropdown.option('教育科技學系');
-  dropdown.option('第三周');
+  dropdown.option('測驗卷');
   dropdown.style('font-size', '30px'); // 設置下拉式選單的字體大小
   dropdown.size(200, 50); // 設置下拉式選單的大小(設定寬與高)
   dropdown.changed(handleDropdownChange); // 設置下拉式選單的變更事件
@@ -89,8 +89,8 @@ function handleDropdownChange() {
     iframe.attribute('src', 'https://www.tku.edu.tw'); // 設置 iframe 的 src 屬性
   } else if (selected === '教育科技學系') {
     iframe.attribute('src', 'https://www.et.tku.edu.tw'); // 設置 iframe 的 src 屬性
-  } else if (selected === '第三周') {
-    iframe.attribute('src', 'https://hackmd.io/@cfchen/H15O7KGske'); // 設置 iframe 的 src 屬性
+  } else if (selected === '測驗卷') {
+    iframe.attribute('src', 'https://cfchengit.github.io/20250310/'); // 設置 iframe 的 src 屬性
   }
 }
 
